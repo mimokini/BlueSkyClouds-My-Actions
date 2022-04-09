@@ -14,7 +14,8 @@ const SEND_KEY = process.env.SEND_KEY
 const UTC8 = new Date().getTime() + new Date().getTimezoneOffset()*60*1000 + 8*60*60*1000;
 
 async function downFile () {
-    const url = 'https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.js'
+//    const url = 'https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.js'
+    const url = 'https://github.com/chavyleung/scripts/blob/master/10000/10000.js'
     await download(url, './')
 }
 
